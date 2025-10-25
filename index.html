@@ -31,7 +31,7 @@
         <nav class="navbar navbar-expand-sm bg-primary navbar-dark">
             <div class="container-fluid">
                 <ul class="navbar-nav">
-                    <a class="navbar-brand" href="#">Logo</a>
+                    <a class="navbar-brand" href="#"><img src="images/logo.png" width="30px"></a> <!-- logo goes here-->
                     <li class="nav-item">
                         <a class="nav-link active" href="index.html">Home</a>
                     </li>
@@ -60,25 +60,25 @@
                     <div class="carousel-inner">
                         <!-- first active slide-->
                         <div class="carousel-item active">
-                            <img src="images/OLL.png" alt="Rubik's Cube OLL" class="d-block w-100">
+                            <img src="images/OLL.png" alt="Rubik's Cube OLL" class="d-block mx-auto" height="250px">
                             <div class="carousel-caption">
                                 <h3>OLL</h3>
-                                <p>All that's left is to solve PLL</p>
+                                <p>All that's left is to solve PLL.</p>
                             </div>
                         </div>
                         <div class="carousel-item">
-                            <img src="images/chicago.png" alt="Chicago" class="d-block w-100">
+                            <img src="images/carousel-1.png" alt="mi computadora no funciona" class="d-block" height="250px">
                             <div class="carousel-caption">
-                                <h3>Chicago</h3>
-                                <p>The windy city!</p>
+                                <h3>Quizlet</h3>
+                                <p>A funny screnshot from a Spanish 3 quizlet.</p>
                             </div>
                         </div>
                         <!-- add third slide-->
                         <div class="carousel-item">
-                            <img src="images/newyork.png" alt="New York" class="d-block w-100">
+                            <img src="images/timur original page.png" alt="New York" class="d-block mx-auto" height="250px">
                             <div class="carousel-caption">
-                                <h3>New York</h3>
-                                <p>The city that never sleeps</p>
+                                <h3>Timur's webpage</h3>
+                                <p>What Timur's webpage looked like before Eda styled it.</p>
                             </div>
                         </div>
                     </div>
@@ -133,5 +133,63 @@
             </div>
         </div>
     </div>
+
+    <div class="container p-5 m-5 border">
+        <div class="row">
+            <div class="col-md-4">
+                <h2>Bootstrap is for HTML</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et
+                    dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                    aliquip
+                    ex ea commodo consequat.
+                </p>
+                <!-- bootstrap buttons -->
+                <a class="btn btn-primary" href="#" role="button">More on HTML</a>
+            </div>
+            <div class="col-md-4">
+                <h2>Bootstrap is for web design</h2>
+                <p>Lorem ipsum but it's not lorem ipsum
+                </p>
+                <a class="btn btn-primary" href="#" role="button">More on CSS</a>
+            </div>
+            <div class="col-md-2">
+                <h2>Breaking news</h2>
+                <p>Absolutely nothing happened
+                </p>
+                <button class="btn btn-success" role="button">Do something cool with JS</button>
+            </div>
+            <div class="col-md-1">
+                <h2>Tiny column</h2>
+                <p>Bootstrap has up to 12 columns, this is the smallest one
+                </p>
+                <button class="btn btn-success" role="button">Do something cool with JS</button>
+            </div>
+            <div class="col-md-1">
+                <h2>Tiny column 2</h2>
+                <p>Not much to put here
+                </p>
+                <button class="btn btn-success" role="button">Do something cool with JS</button>
+            </div>
+        </div>
+    </div>
+
+    <form action="" id="progress-bar-form">
+        <label for="percentage">Percentage:</label><br>
+        <input type="text" name="percentage" id="percentage"><br>
+    </form>
+    <br>
+    <input type="button" value="SUBMIT" onclick="getPercentage();">
+
+    <div class="container"> <!--NEW THING progress class from boostrap-->
+        <h2>Basic Progress Bar</h2>
+        <p>To create a default progress bar, add a .progress class to a container element and add the progress-bar class to its child element. Use the CSS width property to set the width of the progress bar:</p>
+        <div class="progress">
+            <div class="progress-bar" style="width:70%" id="result"></div>
+        </div>
+        <p>Try entering a percentage above and see the progress bar change!</p>
+    </div>
+
+    <script src="JS/script.js"></script>
 </body>
 </html>
